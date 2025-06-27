@@ -1,0 +1,47 @@
+name: qa
+
+on:
+  push:
+    paths-ignore:
+      - '.github/workflows/reward.yml'
+      - '.github/ISSUE_TEMPLATE/*'
+      - '.gitignore'
+      - '*.md'
+    branches:
+      - main
+  pull_request:
+    paths-ignore:
+      - '.github/workflows/reward.yml'
+      - '.github/ISSUE_TEMPLATE/*'
+      - '.gitignore'
+      - '*.md'
+    branches:
+      - main
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+          cache-dependency-path: 'package-lock.json'
+      - run: |
+          npm ci
+          npm run lint
+
+  build:
+    needs: lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+          cache-dependency-path: 'package-lock.json'
+      - run: |
+          npm ci
+          npm test

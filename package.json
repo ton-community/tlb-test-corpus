@@ -1,0 +1,29 @@
+{
+  "name": "tlb-test-corpus",
+  "version": "1.0.0-alpha.0",
+  "description": "TL-B Test Corpus — a set of test vectors for testing TL-B implementations",
+  "keywords": [
+    "ton",
+    "tlb"
+  ],
+  "author": "ilyar",
+  "license": "AGPL-3.0",
+  "prettier": "@ton/toolchain/prettier",
+  "scripts": {
+    "fetch-block.tlb": "wget -O block.tlb https://github.com/ton-blockchain/ton/raw/774371bdc9f6107fd05106c1fd559e8903e0513d/crypto/block/block.tlb",
+    "fetch-boc.tlb": "wget -O boc.tlb https://github.com/ton-blockchain/ton/blob/dd745485e26cf581019c2b8c3013d4c14ec0473e/crypto/tl/boc.tlb",
+    "fetch-schema": "npm run fetch-block.tlb && npm run fetch-boc.tlb",
+    "postinstall": "npm run fetch-schema",
+    "lint": "eslint . --max-warnings 0",
+    "lint:fix": "eslint . --max-warnings 0 --fix",
+    "test": "ts-node tlb-corpus-test.ts"
+  },
+  "dependencies": {
+    "@ton-community/tlb-codegen": "^2.0.0-beta.1",
+    "@ton/core": "^0.61.0",
+    "@ton/toolchain": "github:the-ton-tech/toolchain#v1",
+    "@types/node": "^24.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  }
+}
