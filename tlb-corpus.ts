@@ -314,6 +314,22 @@ export const corpus: TLBCorpus = {
         ],
     ],
     'Complex Expressions': [
+        [
+            'message#_ len:(## 7) { len <= 127 } text:(bits (len * 8)) = Message;',
+            {
+                kind: 'Message',
+                len: 127,
+                text: new BitString(
+                    Buffer.from(
+                        'TON data are DAG-cell bags: ≤1023 bits + 4 refs, then TL-B serialized & SHA-256 hashed with transparent/representation hashes',
+                        'utf-8',
+                    ),
+                    0,
+                    127 * 8,
+                ),
+            },
+            'te6cckEBAQEAggAA//6onpxAyMLowkDC5MpAiIKOWsbK2NhAxMLO5nRBxRNIYmBkZkDE0ujmQFZAaEDkyszmWEDo0MrcQKiYWoRA5srk0sLY0vTKyEBMQKaQglpkamxA0MLm0MrIQO7S6NBA6OTC3ObgwuTK3Ohe5Mrg5MrmytzowujS3txA0MLm0MrnysqqLg==',
+        ],
         ['a$_ s:(3 * int5) = TupleCheck;', { kind: 'TupleCheck', s: [5, 6, 7] }, 'te6cckEBAQEABAAAAymPK0xvnA=='],
         [
             '_ a:(## 1) b:a?(## 32) = ConditionalField;',
