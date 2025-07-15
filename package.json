@@ -16,7 +16,8 @@
     "postinstall": "npm run fetch-schema",
     "lint": "eslint . --max-warnings 0",
     "lint:fix": "eslint . --max-warnings 0 --fix",
-    "test": "ts-node tlb-corpus-test.ts"
+    "clean": "rm -fr data",
+    "test": "npm run clean && ts-node tlb-corpus-test.ts"
   },
   "dependencies": {
     "@ton-community/tlb-codegen": "^2.0.0-beta.1",
