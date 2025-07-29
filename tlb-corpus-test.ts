@@ -2,7 +2,7 @@ import { execSync } from 'child_process';
 import { join } from 'node:path';
 import { readFileSync, mkdirSync, writeFileSync, existsSync } from 'node:fs';
 
-import { corpus, TLBDataTyped, TLBGroup } from './tlb-corpus';
+import { groupCorpusFlat, TLBDataTyped, TLBGroup } from './tlb-corpus';
 const args = process.argv.slice(2);
 const isValidate = args.includes('-v') || args.includes('--validate');
 
@@ -27,14 +27,14 @@ function cmd(cmd: string, outFile?: string, silent = true): string {
     }
 }
 
-let status = 0;
+let failedCount = 0;
 let caseCount = 0;
 
 function testCase(groupName: TLBGroup) {
-    for (const index in corpus[groupName]) {
-        const [tlb, data, boc] = corpus[groupName][index];
+    for (const index in groupCorpusFlat[groupName]) {
+        const [tlb, data, boc] = groupCorpusFlat[groupName][index];
         const log: string[] = [];
-        const baseName = `case-${caseCount.toString().padStart(3, '0')}`;
+        const baseName = `case-${(caseCount + 1).toString().padStart(3, '0')}`;
         const schemaDir = 'data';
         if (!existsSync(schemaDir)) mkdirSync(schemaDir);
         const tlbFile = join(schemaDir, `${baseName}.tlb`);
@@ -52,22 +52,23 @@ function testCase(groupName: TLBGroup) {
         if (!existsSync(scriptFile)) {
             const template = `import { Builder } from '@ton/core';
 import { store${typeName} } from './${codegenName}';
-import { corpus } from '../tlb-corpus';
+import { groupCorpusFlat } from '../tlb-corpus';
 const b = new Builder();
 // @ts-ignore
-store${typeName}(corpus[${JSON.stringify(groupName)}][${index}][1])(b);
+store${typeName}(groupCorpusFlat[${JSON.stringify(groupName)}][${index}][1])(b);
 console.log(b.endCell().toBoc().toString('base64'));
 `;
             writeFileSync(scriptFile, template);
         }
         const result = cmd(`npx ts-node ${scriptFile}`);
+        const caseName = `#${(+index + 1).toString().padStart(2, '0')} ${baseName} ${kind}`;
         if (result !== boc) {
-            log.push('MISMATCH', baseName);
+            log.push('MISMATCH', caseName);
             log.push(`expected=${boc}`);
             log.push(`actual=${result}`);
-            status = 1;
+            failedCount += 1;
         } else {
-            log.push('OK', baseName);
+            log.push('OK', caseName);
         }
         console.log(` ${log.join(' ')}`);
         caseCount += 1;
@@ -75,7 +76,7 @@ console.log(b.endCell().toBoc().toString('base64'));
 }
 
 async function main() {
-    for (const groupName of Object.keys(corpus)) {
+    for (const groupName of Object.keys(groupCorpusFlat)) {
         console.log(groupName);
         if (groupName.includes('skip')) continue;
         testCase(groupName);
@@ -87,4 +88,5 @@ main().catch((error) => {
     process.exit(1);
 });
 
-process.exit(status);
+console.log(`Cases: ${failedCount} failed, ${caseCount - failedCount} passed, ${caseCount} total`);
+process.exit(failedCount === 0 ? 0 : 1);
