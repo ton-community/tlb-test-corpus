@@ -69,7 +69,7 @@ export const TLBTVMReflection = `${TLBStd.Maybe}${TLBLib.HashmapE}vm_stk_null#00
 
 export const groupCorpus: TLBCorpus = {
     'Built-in types': [
-        ['_ x:# = OneNatParam;', [[{ kind: 'OneNatParam', x: 42 }, 'te6cckEBAQEABgAACAAAACoFpvBE']]],
+        ['_ x:# = OneNatParam;', [[{ kind: 'OneNatParam', x: 42 }, 'b5ee9c724101010100060000080000002a05a6f044']]],
         [
             '_ x:# y:# = TowNatParam;',
             [
@@ -79,7 +79,7 @@ export const groupCorpus: TLBCorpus = {
                         x: 827,
                         y: 387,
                     },
-                    'te6cckEBAQEACgAAEAAAAzsAAAGDtn3/EA==',
+                    'b5ee9c7241010101000a0000100000033b00000183b67dff10',
                 ],
             ],
         ],
@@ -89,19 +89,19 @@ export const groupCorpus: TLBCorpus = {
                 [
                     {
                         kind: 'ParamCell',
-                        x: Cell.fromBase64('te6cckEBAQEAAgAAAEysuc0='),
+                        x: Cell.fromHex('b5ee9c724101010100020000004cacb9cd'),
                     },
-                    'te6cckEBAgEABQABAAEAAG4cXEQ=',
+                    'b5ee9c724101020100050001000100006e1c5c44',
                 ],
                 [
                     {
                         kind: 'UseParamCell',
                         x: {
                             kind: 'ParamCell',
-                            x: Cell.fromBase64('te6cckEBAQEAAgAAAEysuc0='),
+                            x: Cell.fromHex('b5ee9c724101010100020000004cacb9cd'),
                         },
                     },
-                    'te6cckEBAwEACAABAAEBAAIAAC+21bY=',
+                    'b5ee9c724101030100080001000101000200002fb6d5b6',
                 ],
             ],
         ],
@@ -114,14 +114,14 @@ export const groupCorpus: TLBCorpus = {
                         x: 1,
                         y: 2,
                     },
-                    'te6cckEBAQEACwAAEQAAAACAAAABQGpqBMI=',
+                    'b5ee9c7241010101000b0000110000000080000001406a6a04c2',
                 ],
                 [
                     {
                         kind: 'MultiConstructor_b',
                         x: 3,
                     },
-                    'te6cckEBAQEABwAACYAAAAHAAXGRBw==',
+                    'b5ee9c7241010101000700000980000001c001719107',
                 ],
             ],
         ],
@@ -133,7 +133,7 @@ export const groupCorpus: TLBCorpus = {
                         kind: 'LimitNat',
                         x: 10,
                     },
-                    'te6cckEBAQEAAwAAAVSGgoTj',
+                    'b5ee9c7241010101000300000154868284e3',
                 ],
                 [
                     {
@@ -144,7 +144,7 @@ export const groupCorpus: TLBCorpus = {
                         },
                         y: 5,
                     },
-                    'te6cckEBAQEABwAACVAAAAAsnVCRbA==',
+                    'b5ee9c72410101010007000009500000002c9d50916c',
                 ],
             ],
         ],
@@ -157,7 +157,7 @@ export const groupCorpus: TLBCorpus = {
                         n: 4,
                         x: 10,
                     },
-                    'te6cckEBAQEAAwAAAagjIqld',
+                    'b5ee9c72410101010003000001a82322a95d',
                 ],
                 [
                     {
@@ -168,7 +168,7 @@ export const groupCorpus: TLBCorpus = {
                             x: 10,
                         },
                     },
-                    'te6cckEBAQEAAwAAAagjIqld',
+                    'b5ee9c72410101010003000001a82322a95d',
                 ],
             ],
         ],
@@ -184,7 +184,7 @@ export const groupCorpus: TLBCorpus = {
                             x: 10n,
                         },
                     },
-                    'te6cckEBAQEAAwAAAagjIqld',
+                    'b5ee9c72410101010003000001a82322a95d',
                 ],
                 [
                     {
@@ -198,7 +198,7 @@ export const groupCorpus: TLBCorpus = {
                             },
                         },
                     },
-                    'te6cckEBAgEABgABAAEAAah/0fN/',
+                    'b5ee9c72410102010006000100010001a87fd1f37f',
                 ],
             ],
         ],
@@ -211,7 +211,7 @@ export const groupCorpus: TLBCorpus = {
                         x: 3,
                         y: 7,
                     },
-                    'te6cckEBAQEAAwAAAfzvbxbL',
+                    'b5ee9c72410101010003000001fcef6f16cb',
                 ],
             ],
         ],
@@ -223,14 +223,14 @@ export const groupCorpus: TLBCorpus = {
                         kind: 'ParamConstructor_a',
                         n: 3,
                     },
-                    'te6cckEBAQEAAwAAAUD20kA0',
+                    'b5ee9c7241010101000300000140f6d24034',
                 ],
                 [
                     {
                         kind: 'ParamConstructor_b',
                         n: 3,
                     },
-                    'te6cckEBAQEAAwAAAUD20kA0',
+                    'b5ee9c7241010101000300000140f6d24034',
                 ],
             ],
         ],
@@ -242,7 +242,7 @@ export const groupCorpus: TLBCorpus = {
                         kind: 'AnonymousData',
                         anon0: 1,
                     },
-                    'te6cckEBAQEAAwAAAcCO6ba2',
+                    'b5ee9c72410101010003000001c08ee9b6b6',
                 ],
             ],
         ],
@@ -254,14 +254,14 @@ export const groupCorpus: TLBCorpus = {
                         kind: 'IntType',
                         value: -1n,
                     },
-                    'te6cckEBAQEAIwAAQf//////////////////////////////////////////wCAigoQ=',
+                    'b5ee9c72410101010023000041ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc020228284',
                 ],
                 [
                     {
                         kind: 'UintType',
                         value: 2n,
                     },
-                    'te6cckEBAQEAIwAAQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQGTLvI4=',
+                    'b5ee9c7241010101002300004100000000000000000000000000000000000000000000000000000000000000014064cbbc8e',
                 ],
             ],
         ],
@@ -273,7 +273,7 @@ export const groupCorpus: TLBCorpus = {
                         kind: 'CheckKeyword',
                         const0: 3,
                     },
-                    'te6cckEBAQEABgAACAAAAAMX8/8c',
+                    'b5ee9c724101010100060000080000000317f3ff1c',
                 ],
             ],
         ],
@@ -286,15 +286,15 @@ export const groupCorpus: TLBCorpus = {
                     {
                         kind: 'Unit',
                     },
-                    'te6cckEBAQEAAgAAAEysuc0=',
+                    'b5ee9c724101010100020000004cacb9cd',
                 ],
             ],
         ],
         [
             `${TLBStd.Bool} _ a:Bool = BoolUser;`,
             [
-                [{ kind: 'BoolUser', a: { kind: 'Bool', value: true } }, 'te6cckEBAQEAAwAAAcCO6ba2'],
-                [{ kind: 'BoolUser', a: { kind: 'Bool', value: false } }, 'te6cckEBAQEAAwAAAUD20kA0'],
+                [{ kind: 'BoolUser', a: { kind: 'Bool', value: true } }, 'b5ee9c72410101010003000001c08ee9b6b6'],
+                [{ kind: 'BoolUser', a: { kind: 'Bool', value: false } }, 'b5ee9c7241010101000300000140f6d24034'],
             ],
         ],
         [
@@ -315,7 +315,7 @@ export const groupCorpus: TLBCorpus = {
                             },
                         },
                     },
-                    'te6cckEBAQEABwAACeAAAACQXOzvaQ==',
+                    'b5ee9c72410101010007000009e0000000905cecef69',
                 ],
                 [
                     {
@@ -324,7 +324,7 @@ export const groupCorpus: TLBCorpus = {
                             kind: 'Maybe_nothing',
                         },
                     },
-                    'te6cckEBAQEAAwAAAUD20kA0',
+                    'b5ee9c7241010101000300000140f6d24034',
                 ],
             ],
         ],
@@ -356,7 +356,7 @@ export const groupCorpus: TLBCorpus = {
                                 },
                             }),
                     },
-                    'te6cckEBBgEAGAABAcABAgPYYAIEAQH0AwAB8AEBZgUAAbCFr30M',
+                    'b5ee9c72410106010018000101c0010203d86002040101f4030001f0010166050001b085af7d0c',
                 ],
             ],
         ],
@@ -372,7 +372,7 @@ export const groupCorpus: TLBCorpus = {
                             x: Dictionary.empty(Dictionary.Keys.BigUint(7)).set(3n, 6).set(7n, 9),
                         },
                     },
-                    'te6cckEBBAEAEQABAcABAgFiAgMAA/GgAAPyYCraEmE=',
+                    'b5ee9c72410104010011000101c00102016202030003f1a00003f2602ada1261',
                 ],
             ],
         ],
@@ -388,7 +388,7 @@ export const groupCorpus: TLBCorpus = {
                             x: Dictionary.empty(Dictionary.Keys.BigUint(7)).set(3n, 6).set(7n, 9),
                         },
                     },
-                    'te6cckEBBAEAEQABAcABAgHSAgMAA/GgAAPyYDsb/mA=',
+                    'b5ee9c72410104010011000101c0010201d202030003f1a00003f2603b1bfe60',
                 ],
             ],
         ],
@@ -405,7 +405,7 @@ export const groupCorpus: TLBCorpus = {
                                 .set(19n, { kind: 'OneComb', t: 5, x: 4 }),
                         },
                     },
-                    'te6cckEBBAEAGgABAcABAgPYcAIDAAuggAAAAZoAC6GAAAACkg7BvZ4=',
+                    'b5ee9c7241010401001a000101c0010203d8700203000ba0800000019a000ba180000002920ec1bd9e',
                 ],
             ],
         ],
@@ -419,7 +419,7 @@ export const groupCorpus: TLBCorpus = {
                             .set(5, { extra: { kind: 'FixedIntParam', y: 11 }, value: 8n })
                             .set(6, { extra: { kind: 'FixedIntParam', y: 9 }, value: 3n }),
                     },
-                    'te6cckEBBAEAFQABAcABAgWcAAwCAwAFVYhEAAVEiBywOuD7',
+                    'b5ee9c72410104010015000101c00102059c000c02030005558844000544881cb03ae0fb',
                 ],
             ],
         ],
@@ -431,21 +431,21 @@ export const groupCorpus: TLBCorpus = {
                         kind: 'AnyAddressUser',
                         x: Address.parse('EQBmzW4wYlFW0tiBgj5sP1CgSlLdYs-VpjPWM7oPYPYWQEdT'),
                     },
-                    'te6cckEBAQEAJAAAQ4AM2a3GDEoq2lsQMEfNh+oUCUpbrFnytMZ6xndB7B7CyBAaUUB7',
+                    'b5ee9c72410101010024000043800cd9adc60c4a2ada5b103047cd87ea14094a5bac59f2b4c67ac67741ec1ec2c8101a51407b',
                 ],
                 [
                     {
                         kind: 'AnyAddressUser',
                         x: new ExternalAddress(5623048054n, 48),
                     },
-                    'te6cckEBAQEACgAAD0YAACnlHO7QzBYE+A==',
+                    'b5ee9c7241010101000a00000f46000029e51ceed0cc1604f8',
                 ],
                 [
                     {
                         kind: 'AnyAddressUser',
                         x: null,
                     },
-                    'te6cckEBAQEAAwAAASCUQYZV',
+                    'b5ee9c724101010100030000012094418655',
                 ],
             ],
         ],
@@ -457,14 +457,14 @@ export const groupCorpus: TLBCorpus = {
                         kind: 'BitUser',
                         x: false,
                     },
-                    'te6cckEBAQEAAwAAAUD20kA0',
+                    'b5ee9c7241010101000300000140f6d24034',
                 ],
                 [
                     {
                         kind: 'BitUser',
                         x: true,
                     },
-                    'te6cckEBAQEAAwAAAcCO6ba2',
+                    'b5ee9c72410101010003000001c08ee9b6b6',
                 ],
             ],
         ],
@@ -476,7 +476,7 @@ export const groupCorpus: TLBCorpus = {
                         kind: 'GramsUser',
                         x: 100000n,
                     },
-                    'te6cckEBAQEABgAABzAYaghQbRik',
+                    'b5ee9c7241010101000600000730186a08506d18a4',
                 ],
             ],
         ],
@@ -488,7 +488,7 @@ export const groupCorpus: TLBCorpus = {
                         kind: 'ExtAddressUser',
                         x: new ExternalAddress(5623048054n, 48),
                     },
-                    'te6cckEBAQEACgAAD0YAACnlHO7QzBYE+A==',
+                    'b5ee9c7241010101000a00000f46000029e51ceed0cc1604f8',
                 ],
             ],
         ],
@@ -500,7 +500,7 @@ export const groupCorpus: TLBCorpus = {
                         kind: 'ExtAddressUser',
                         x: null,
                     },
-                    'te6cckEBAQEAAwAAASCUQYZV',
+                    'b5ee9c724101010100030000012094418655',
                 ],
             ],
         ],
@@ -512,14 +512,14 @@ export const groupCorpus: TLBCorpus = {
                         kind: 'VarUIntegerUser',
                         v: 5n,
                     },
-                    'te6cckEBAQEABAAAAyCwcWIpfA==',
+                    'b5ee9c7241010101000400000320b07162297c',
                 ],
                 [
                     {
                         kind: 'VarIntegerUser',
                         v: -6n,
                     },
-                    'te6cckEBAQEABAAAAw/U84+HQg==',
+                    'b5ee9c724101010100040000030fd4f38f8742',
                 ],
             ],
         ],
@@ -531,7 +531,7 @@ export const groupCorpus: TLBCorpus = {
                         kind: 'HashmapEUser',
                         x: Dictionary.empty(Dictionary.Keys.Uint(8), Dictionary.Values.Uint(16)),
                     },
-                    'te6cckEBAQEAAwAAAUD20kA0',
+                    'b5ee9c7241010101000300000140f6d24034',
                 ],
                 [
                     {
@@ -541,7 +541,7 @@ export const groupCorpus: TLBCorpus = {
                             .set(1, 6)
                             .set(2, 7),
                     },
-                    'te6cckEBBgEAHQABAcABAgHNAgUCASADBAAFAAFgAAUAAaAABUAAePIZIlc=',
+                    'b5ee9c7241010601001d000101c0010201cd02050201200304000500016000050001a00005400078f2192257',
                 ],
             ],
         ],
@@ -555,7 +555,7 @@ export const groupCorpus: TLBCorpus = {
                             .set(6n, { kind: 'VarUIntegerUser', v: 5n })
                             .set(7n, { kind: 'VarUIntegerUser', v: 3n }),
                     },
-                    'te6cckEBBAEAHgABAcABAhuxgAAAAAAAAAAAAAAAOAIDAAMILAADCBzxMIhV',
+                    'b5ee9c7241010401001e000101c001021bb18000000000000000000000003802030003082c0003081cf1308855',
                 ],
             ],
         ],
@@ -580,7 +580,7 @@ export const groupCorpus: TLBCorpus = {
                             },
                         ],
                     },
-                    'te6cckEBBAEAKQABGAAAAwEAAAAAAAAAAwEBEgEAAAAAAAAAAgIBEgEAAAAAAAAAAQMAAP/hQqE=',
+                    'b5ee9c72410104010029000118000003010000000000000003010112010000000000000002020112010000000000000001030000ffe142a1',
                 ],
             ],
         ],
@@ -594,7 +594,7 @@ export const groupCorpus: TLBCorpus = {
                         kind: 'ManyComb',
                         y: { kind: 'OneComb', t: 5, x: { kind: 'OneComb', t: 6, x: { kind: 'OneComb', t: 7, x: 3 } } },
                     },
-                    'te6cckEBAQEADwAAGQAAAAUAAAAGAAAAB3D7IMdl',
+                    'b5ee9c7241010101000f00001900000005000000060000000770fb20c765',
                 ],
             ],
         ],
@@ -612,7 +612,7 @@ export const groupCorpus: TLBCorpus = {
                             init: { kind: 'Maybe_just', value: { kind: 'Either_right', value: 4 } },
                         },
                     },
-                    'te6cckEBBAEAGwADCQAAAAT4AQIDAAUAABIACwAAAAUAWAADADjo2w1l',
+                    'b5ee9c7241010401001b00030900000004f80102030005000012000b00000005005800030038e8db0d65',
                 ],
             ],
         ],
@@ -625,7 +625,7 @@ export const groupCorpus: TLBCorpus = {
                         n: 8,
                         ref: { kind: 'BitLenArg', x: 10, value: 1000n },
                     },
-                    'te6cckEBAgEABwABAAEAA/ogWcXyAQ==',
+                    'b5ee9c72410102010007000100010003fa2059c5f201',
                 ],
             ],
         ],
@@ -637,7 +637,7 @@ export const groupCorpus: TLBCorpus = {
                         kind: 'RefCombinatorAny',
                         msg: { kind: 'Maybe_just', value: beginCell().storeUint(676, 10).endCell() },
                     },
-                    'te6cckEBAgEABwABAAEAA9SQGMa3OA==',
+                    'b5ee9c72410102010007000100010003d49018c6b738',
                 ],
             ],
         ],
@@ -653,7 +653,7 @@ export const groupCorpus: TLBCorpus = {
                             y: { kind: 'Maybe_just', value: beginCell().storeUint(3, 32).endCell() },
                         },
                     },
-                    'te6cckEBAwEAEQABAAEBCQAAAAPAAgAIAAAAA01cl/4=',
+                    'b5ee9c7241010301001100010001010900000003c0020008000000034d5c97fe',
                 ],
             ],
         ],
@@ -669,7 +669,7 @@ export const groupCorpus: TLBCorpus = {
                         b: { kind: 'EmptyConstructor__1', x: 65535 },
                         c: { kind: 'EmptyConstructor__2', x: 4294967295 },
                     },
-                    'te6cckEBAQEACQAADf////////AU1SNw',
+                    'b5ee9c7241010101000900000dfffffffffffff014d52370',
                 ],
                 [
                     {
@@ -678,7 +678,7 @@ export const groupCorpus: TLBCorpus = {
                         b: { kind: 'EmptyConstructor__1', x: 1 },
                         c: { kind: 'EmptyConstructor__2', x: 1 },
                     },
-                    'te6cckEBAQEACQAADSAAIAAAADCDX3rj',
+                    'b5ee9c7241010101000900000d20002000000030835f7ae3',
                 ],
             ],
         ],
@@ -700,24 +700,27 @@ export const groupCorpus: TLBCorpus = {
                             127 * 8,
                         ),
                     },
-                    'te6cckEBAQEAggAA//6onpxAyMLowkDC5MpAiIKOWsbK2NhAxMLO5nRAeHpAYmBkZkDE0ujmQFZAaEDkyszmWEDo0MrcQKiYWoRA5srk0sLY0vTKyEBMQKaQglpkamxA0MLm0MrIQO7S6NBA6OTC3ObgwuTK3Ohe5Mrg5MrmytzowujS3txA0MLm0MrnylQJ4A==',
+                    'b5ee9c724101010100820000fffea89e9c40c8c2e8c240c2e4ca4088828e5ac6cad8d840c4c2cee67440787a406260646640c4d2e8e64056406840e4cacce65840e8d0cadc40a8985a8440e6cae4d2c2d8d2f4cac8404c40a690825a646a6c40d0c2e6d0cac840eed2e8d040e8e4c2dce6e0c2e4cadce85ee4cae0e4cae6cadce8c2e8d2dedc40d0c2e6d0cae7ca5409e0',
                 ],
             ],
         ],
-        ['a$_ s:(3 * int5) = TupleCheck;', [[{ kind: 'TupleCheck', s: [5, 6, 7] }, 'te6cckEBAQEABAAAAymPK0xvnA==']]],
+        [
+            'a$_ s:(3 * int5) = TupleCheck;',
+            [[{ kind: 'TupleCheck', s: [5, 6, 7] }, 'b5ee9c72410101010004000003298f2b4c6f9c']],
+        ],
         [
             '_ a:(## 1) b:a?(## 32) = ConditionalField;',
             [
-                [{ kind: 'ConditionalField', a: 1, b: 5 }, 'te6cckEBAQEABwAACYAAAALAmNl2Mw=='],
-                [{ kind: 'ConditionalField', a: 0, b: 5 }, 'te6cckEBAQEABwAACQAAAALAxAzUXQ=='],
-                [{ kind: 'ConditionalField', a: 0, b: undefined }, 'te6cckEBAQEAAwAAAUD20kA0'],
+                [{ kind: 'ConditionalField', a: 1, b: 5 }, 'b5ee9c7241010101000700000980000002c098d97633'],
+                [{ kind: 'ConditionalField', a: 0, b: 5 }, 'b5ee9c7241010101000700000900000002c0c40cd45d'],
+                [{ kind: 'ConditionalField', a: 0, b: undefined }, 'b5ee9c7241010101000300000140f6d24034'],
             ],
         ],
         [
             '_ a:(## 6) b:(a . 2)?(## 32) = BitSelection;',
             [
-                [{ kind: 'BitSelection', a: 5, b: 5 }, 'te6cckEBAQEABwAACRQAAAAWCuWE4A=='],
-                [{ kind: 'BitSelection', a: 8, b: 5 }, 'te6cckEBAQEABwAACSAAAAAWPo9LlA=='],
+                [{ kind: 'BitSelection', a: 5, b: 5 }, 'b5ee9c7241010101000700000914000000160ae584e0'],
+                [{ kind: 'BitSelection', a: 8, b: 5 }, 'b5ee9c7241010101000700000920000000163e8f4b94'],
             ],
         ],
         [
@@ -725,9 +728,9 @@ export const groupCorpus: TLBCorpus = {
             [
                 [
                     { kind: 'ConditionalRef', x: 1, y: { kind: 'Simple', a: 3, b: 4 } },
-                    'te6cckEBAgEADgABAcABABAAAAADAAAABDT6GQY=',
+                    'b5ee9c7241010201000e000101c0010010000000030000000434fa1906',
                 ],
-                [{ kind: 'ConditionalRef', x: 0, y: undefined }, 'te6cckEBAQEAAwAAAUD20kA0'],
+                [{ kind: 'ConditionalRef', x: 0, y: undefined }, 'b5ee9c7241010101000300000140f6d24034'],
             ],
         ],
         [
@@ -738,7 +741,7 @@ export const groupCorpus: TLBCorpus = {
                         kind: 'EqualityExpression',
                         n: 2,
                     },
-                    'te6cckEBAQEABgAACAAAAAIUcJTu',
+                    'b5ee9c7241010101000600000800000002147094ee',
                 ],
             ],
         ],
@@ -750,7 +753,7 @@ export const groupCorpus: TLBCorpus = {
                         kind: 'ImplicitCondition',
                         flags: 100,
                     },
-                    'te6cckEBAQEABAAAAxkgKtd5IA==',
+                    'b5ee9c7241010101000400000319202ad77920',
                 ],
             ],
         ],
@@ -767,7 +770,7 @@ export const groupCorpus: TLBCorpus = {
                             b: 4,
                         },
                     },
-                    'te6cckEBAgEADgABAcABABAAAAADAAAABDT6GQY=',
+                    'b5ee9c7241010201000e000101c0010010000000030000000434fa1906',
                 ],
             ],
         ],
@@ -778,27 +781,27 @@ export const groupCorpus: TLBCorpus = {
             [
                 [
                     { kind: 'SharpConstructor', c: 5, y: { kind: 'FixedIntParam', y: 6 } },
-                    'te6cckEBAQEABwAACTAAAAAsZI9oQA==',
+                    'b5ee9c72410101010007000009300000002c648f6840',
                 ],
             ],
         ],
-        ['_ a:# = EmptyTag;', [[{ kind: 'EmptyTag', a: 3 }, 'te6cckEBAQEABgAACAAAAAMX8/8c']]],
-        ['a#f4 x:# = SharpTag;', [[{ kind: 'SharpTag', x: 3 }, 'te6cckEBAQEABwAACvQAAAADBvfMsw==']]],
-        ['a$1011 x:# = DollarTag;', [[{ kind: 'DollarTag', x: 3 }, 'te6cckEBAQEABwAACbAAAAA4SAoO+Q==']]],
+        ['_ a:# = EmptyTag;', [[{ kind: 'EmptyTag', a: 3 }, 'b5ee9c724101010100060000080000000317f3ff1c']]],
+        ['a#f4 x:# = SharpTag;', [[{ kind: 'SharpTag', x: 3 }, 'b5ee9c7241010101000700000af40000000306f7ccb3']]],
+        ['a$1011 x:# = DollarTag;', [[{ kind: 'DollarTag', x: 3 }, 'b5ee9c72410101010007000009b000000038480a0ef9']]],
         [
             '_ a:# b:# = Simple; b$1 Simple = ConstructorOrder; a$0 a:Simple = ConstructorOrder;',
             [
                 [
                     { kind: 'ConstructorOrder_a', a: { kind: 'Simple', a: 2, b: 3 } },
-                    'te6cckEBAQEACwAAEQAAAAEAAAABwFfvYME=',
+                    'b5ee9c7241010101000b0000110000000100000001c057ef60c1',
                 ],
             ],
         ],
         [
             'a a:#  = CheckCrc32;b b:# c:# = CheckCrc32;',
             [
-                [{ kind: 'CheckCrc32_a', a: 3 }, 'te6cckEBAQEACgAAEAnZfnoAAAAD3Ll/xg=='],
-                [{ kind: 'CheckCrc32_b', b: 4, c: 5 }, 'te6cckEBAQEADgAAGKhCs/AAAAAEAAAABdl92k0='],
+                [{ kind: 'CheckCrc32_a', a: 3 }, 'b5ee9c7241010101000a00001009d97e7a00000003dcb97fc6'],
+                [{ kind: 'CheckCrc32_b', b: 4, c: 5 }, 'b5ee9c7241010101000e000018a842b3f00000000400000005d97dda4d'],
             ],
         ],
     ],
@@ -816,7 +819,7 @@ export const groupCorpus: TLBCorpus = {
                             x: { kind: 'Unary_unary_succ', n: 0, x: { kind: 'Unary_unary_zero' } },
                         },
                     },
-                    'te6cckEBAQEAAwAAAeifP9Ic',
+                    'b5ee9c72410101010003000001e89f3fd21c',
                 ],
                 [
                     {
@@ -828,7 +831,7 @@ export const groupCorpus: TLBCorpus = {
                             x: { kind: 'Unary_unary_succ', n: 0, x: { kind: 'Unary_unary_zero' } },
                         },
                     },
-                    'te6cckEBAQEAAwAAAeifP9Ic',
+                    'b5ee9c72410101010003000001e89f3fd21c',
                 ],
                 [
                     {
@@ -840,17 +843,26 @@ export const groupCorpus: TLBCorpus = {
                             x: { kind: 'Unary_unary_succ', n: 1, x: { kind: 'Unary_unary_zero' } },
                         },
                     },
-                    'te6cckEBAQEAAwAAAeifP9Ic',
+                    'b5ee9c72410101010003000001e89f3fd21c',
                 ],
-                [{ kind: 'Unary_unary_succ', n: 3, x: { kind: 'Unary_unary_zero' } }, 'te6cckEBAQEAAwAAAaDsenDX'],
+                [
+                    { kind: 'Unary_unary_succ', n: 3, x: { kind: 'Unary_unary_zero' } },
+                    'b5ee9c72410101010003000001a0ec7a70d7',
+                ],
             ],
         ],
         [
             'a$_ n:# = ParamConst 1 1; b$01 m:# k:# = ParamConst 2 1; c$01 n:# m:# k:# = ParamConst 3 3; d$_ n:# m:# k:# l:# = ParamConst 4 2;',
             [
-                [{ kind: 'ParamConst_d', n: 1, k: 2, l: 3, m: 4 }, 'te6cckEBAQEAEgAAIAAAAAEAAAAEAAAAAgAAAAOkcDvC'],
-                [{ kind: 'ParamConst_b', k: 2, m: 4 }, 'te6cckEBAQEACwAAEUAAAAEAAAAAoM/dxmI='],
-                [{ kind: 'ParamConst_c', k: 2, m: 4, n: 3 }, 'te6cckEBAQEADwAAGUAAAADAAAABAAAAAKDws/3Z'],
+                [
+                    { kind: 'ParamConst_d', n: 1, k: 2, l: 3, m: 4 },
+                    'b5ee9c7241010101001200002000000001000000040000000200000003a4703bc2',
+                ],
+                [{ kind: 'ParamConst_b', k: 2, m: 4 }, 'b5ee9c7241010101000b0000114000000100000000a0cfddc662'],
+                [
+                    { kind: 'ParamConst_c', k: 2, m: 4, n: 3 },
+                    'b5ee9c7241010101000f00001940000000c000000100000000a0f0b3fdd9',
+                ],
             ],
         ],
         [
@@ -866,7 +878,7 @@ export const groupCorpus: TLBCorpus = {
                             x: { kind: 'ParamDifNames_c', n: 1, x: { kind: 'ParamDifNames_a' } },
                         },
                     },
-                    'te6cckEBAQEAAwAAAeifP9Ic',
+                    'b5ee9c72410101010003000001e89f3fd21c',
                 ],
                 [
                     {
@@ -878,7 +890,7 @@ export const groupCorpus: TLBCorpus = {
                             x: { kind: 'ParamDifNames_d', m: 1, x: { kind: 'ParamDifNames_b' } },
                         },
                     },
-                    'te6cckEBAQEAAwAAARjqULzv',
+                    'b5ee9c7241010101000300000118ea50bcef',
                 ],
             ],
         ],
@@ -899,7 +911,7 @@ export const groupCorpus: TLBCorpus = {
                             },
                         },
                     },
-                    'te6cckEBAQEAAwAAAXRYDDnD',
+                    'b5ee9c7241010101000300000174580c39c3',
                 ],
                 [
                     {
@@ -915,13 +927,18 @@ export const groupCorpus: TLBCorpus = {
                             },
                         },
                     },
-                    'te6cckEBAQEAAwAAAXRYDDnD',
+                    'b5ee9c7241010101000300000174580c39c3',
                 ],
             ],
         ],
         [
             'b$1 {y:#} t:# z:# { t = (~y) * 2} = NegationFromImplicit ~(y + 1);',
-            [[{ kind: 'NegationFromImplicit', t: 4, y: 2, z: 7 }, 'te6cckEBAQEACwAAEYAAAAIAAAADwIgR8XQ=']],
+            [
+                [
+                    { kind: 'NegationFromImplicit', t: 4, y: 2, z: 7 },
+                    'b5ee9c7241010101000b0000118000000200000003c08811f174',
+                ],
+            ],
         ],
         [
             'unary_zero$0 = Unary ~0; unary_succ$1 {n:#} x:(Unary ~n) = Unary ~(n + 1); hm_edge#_ {l:#} {m:#} label:(Unary ~l) {7 = (~m) + l} = UnaryUserCheckOrder;',
@@ -937,7 +954,7 @@ export const groupCorpus: TLBCorpus = {
                             x: { kind: 'Unary_unary_succ', n: 0, x: { kind: 'Unary_unary_zero' } },
                         },
                     },
-                    'te6cckEBAQEAAwAAAdDhLuim',
+                    'b5ee9c72410101010003000001d0e12ee8a6',
                 ],
             ],
         ],
@@ -950,7 +967,7 @@ export const groupCorpus: TLBCorpus = {
                         prev_seq_no: 3,
                         seq_no: 4,
                     },
-                    'te6cckEBAQEACgAAEJvHqYcAAAAESLIpEw==',
+                    'b5ee9c7241010101000a0000109bc7a9870000000448b22913',
                 ],
             ],
         ],
@@ -977,7 +994,7 @@ export const groupCorpus: TLBCorpus = {
                             x: 5,
                         },
                     },
-                    'te6cckEBAQEAEgAAHwAAAAAABwAAAAAA6kSUJkDl6Lvv',
+                    'b5ee9c7241010101001200001f0000000000070000000000ea44942640e5e8bbef',
                 ],
                 [
                     {
@@ -997,7 +1014,7 @@ export const groupCorpus: TLBCorpus = {
                             x: 5,
                         },
                     },
-                    'te6cckEBAQEAEAAAGwAAAAAHAAAAAHUiVCZA7F+UPw==',
+                    'b5ee9c7241010101001000001b0000000007000000007522542640ec5f943f',
                 ],
             ],
         ],
@@ -1006,7 +1023,7 @@ export const groupCorpus: TLBCorpus = {
             [
                 [
                     { kind: 'CellsSimple', a: 5, b: 3, c: 4, d: 100, e: 4, q: 1, t: 3 },
-                    'te6cckEBBQEAJwACCAAAAAMBAgAIAAAAAQIIAAAABQQDARAAAAADAAAAZAQACAAAAAQS+uyu',
+                    'b5ee9c724101050100270002080000000301020008000000010208000000050403011000000003000000640400080000000412faecae',
                 ],
             ],
         ],
@@ -1028,7 +1045,7 @@ export const groupCorpus: TLBCorpus = {
                             x: 3,
                         },
                     },
-                    'te6cckEBAQEABgAABwC5iZBxBbIC',
+                    'b5ee9c7241010101000600000700b989907105b202',
                 ],
             ],
         ],
@@ -1036,13 +1053,16 @@ export const groupCorpus: TLBCorpus = {
     'Correct tag calculation': [
         [
             '_#0201_ = LeastSignificantBitRemoved;',
-            [[{ kind: 'LeastSignificantBitRemoved' }, 'te6cckEBAQEABAAAAwIBV0CZZA==']],
+            [[{ kind: 'LeastSignificantBitRemoved' }, 'b5ee9c72410101010004000003020157409964']],
         ],
         [
             'a a:#  = CheckCrc32;b b:# c:# = CheckCrc32;',
             [
-                [{ kind: 'CheckCrc32_a', a: 42 }, 'te6cckEBAQEACgAAEAnZfnoAAAAqzuxwng=='],
-                [{ kind: 'CheckCrc32_b', b: 123, c: 456 }, 'te6cckEBAQEADgAAGKhCs/AAAAB7AAAByEY0F+w='],
+                [{ kind: 'CheckCrc32_a', a: 42 }, 'b5ee9c7241010101000a00001009d97e7a0000002aceec709e'],
+                [
+                    { kind: 'CheckCrc32_b', b: 123, c: 456 },
+                    'b5ee9c7241010101000e000018a842b3f00000007b000001c8463417ec',
+                ],
             ],
         ],
         [
@@ -1056,7 +1076,7 @@ export const groupCorpus: TLBCorpus = {
                         seq_no: 1999,
                         seq_no_2: 2000,
                     },
-                    'te6cckEBAQEADgAAGAxHja4AAAfPAAAH0DgP7jY=',
+                    'b5ee9c7241010101000e0000180c478dae000007cf000007d0380fee36',
                 ],
             ],
         ],

@@ -28,6 +28,7 @@ function cmd(cmd: string, outFile?: string, silent = true): string {
 }
 
 let failedCount = 0;
+let skippedCount = 0;
 let caseCount = 0;
 
 function testCase(groupName: TLBGroup) {
@@ -56,7 +57,7 @@ import { groupCorpusFlat } from '../tlb-corpus';
 const b = new Builder();
 // @ts-ignore
 store${typeName}(groupCorpusFlat[${JSON.stringify(groupName)}][${index}][1])(b);
-console.log(b.endCell().toBoc().toString('base64'));
+console.log(b.endCell().toBoc().toString('hex'));
 `;
             writeFileSync(scriptFile, template);
         }
@@ -78,8 +79,12 @@ console.log(b.endCell().toBoc().toString('base64'));
 async function main() {
     for (const groupName of Object.keys(groupCorpusFlat)) {
         console.log(groupName);
-        if (groupName.includes('skip')) continue;
-        testCase(groupName);
+        if (groupName.includes('skip')) {
+            skippedCount += groupCorpusFlat[groupName].length;
+            caseCount += groupCorpusFlat[groupName].length;
+        } else {
+            testCase(groupName);
+        }
     }
 }
 
@@ -88,5 +93,7 @@ main().catch((error) => {
     process.exit(1);
 });
 
-console.log(`Cases: ${failedCount} failed, ${caseCount - failedCount} passed, ${caseCount} total`);
+console.log(
+    `Cases: ${failedCount} failed, ${skippedCount} skipped, ${caseCount - failedCount} passed, ${caseCount} total`,
+);
 process.exit(failedCount === 0 ? 0 : 1);

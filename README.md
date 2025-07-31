@@ -11,7 +11,7 @@ A set of test vectors for testing implementations of tools for working with TL-B
   [                                   // Use cases
     [
       { kind: 'TLB', data: 42 },      // Data
-      'te6cckEBAQEABgAACAAAACoFpvBE', // BoC in base64
+      'b5ee9c724101010100060000080000002a05a6f044', // BoC in hex
     ],
   ],
 ]
