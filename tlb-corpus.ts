@@ -298,6 +298,36 @@ export const groupCorpus: TLBCorpus = {
             ],
         ],
         [
+            TLBStd.Unary,
+            [
+                [{ kind: 'Unary_unary_zero' }, 'b5ee9c7241010101000300000140f6d24034'],
+                [
+                    { kind: 'Unary_unary_succ', x: { kind: 'Unary_unary_zero' }, n: 0 },
+                    'b5ee9c72410101010003000001a0ec7a70d7',
+                ],
+                [
+                    {
+                        kind: 'Unary_unary_succ',
+                        x: { kind: 'Unary_unary_succ', x: { kind: 'Unary_unary_zero' }, n: 0 },
+                        n: 1,
+                    },
+                    'b5ee9c72410101010003000001d0e12ee8a6',
+                ],
+                [
+                    {
+                        kind: 'Unary_unary_succ',
+                        x: {
+                            kind: 'Unary_unary_succ',
+                            x: { kind: 'Unary_unary_succ', x: { kind: 'Unary_unary_zero' }, n: 0 },
+                            n: 1,
+                        },
+                        n: 2,
+                    },
+                    'b5ee9c72410101010003000001e89f3fd21c',
+                ],
+            ],
+        ],
+        [
             `${TLBStd.Maybe} _ x:Nat2 y:# = A; _ x:(## 2) = Nat2; _ x:(Maybe A) = OptionType;`,
             [
                 [
@@ -807,51 +837,6 @@ export const groupCorpus: TLBCorpus = {
     ],
     'Advanced types': [
         [
-            'unary_zero$0 = Unary ~0; unary_succ$1 {n:#} x:(Unary ~n) = Unary ~(n + 1);',
-            [
-                [
-                    {
-                        kind: 'Unary_unary_succ',
-                        n: 3,
-                        x: {
-                            kind: 'Unary_unary_succ',
-                            n: 1,
-                            x: { kind: 'Unary_unary_succ', n: 0, x: { kind: 'Unary_unary_zero' } },
-                        },
-                    },
-                    'b5ee9c72410101010003000001e89f3fd21c',
-                ],
-                [
-                    {
-                        kind: 'Unary_unary_succ',
-                        n: 2,
-                        x: {
-                            kind: 'Unary_unary_succ',
-                            n: 1,
-                            x: { kind: 'Unary_unary_succ', n: 0, x: { kind: 'Unary_unary_zero' } },
-                        },
-                    },
-                    'b5ee9c72410101010003000001e89f3fd21c',
-                ],
-                [
-                    {
-                        kind: 'Unary_unary_succ',
-                        n: 3,
-                        x: {
-                            kind: 'Unary_unary_succ',
-                            n: 2,
-                            x: { kind: 'Unary_unary_succ', n: 1, x: { kind: 'Unary_unary_zero' } },
-                        },
-                    },
-                    'b5ee9c72410101010003000001e89f3fd21c',
-                ],
-                [
-                    { kind: 'Unary_unary_succ', n: 3, x: { kind: 'Unary_unary_zero' } },
-                    'b5ee9c72410101010003000001a0ec7a70d7',
-                ],
-            ],
-        ],
-        [
             'a$_ n:# = ParamConst 1 1; b$01 m:# k:# = ParamConst 2 1; c$01 n:# m:# k:# = ParamConst 3 3; d$_ n:# m:# k:# l:# = ParamConst 4 2;',
             [
                 [
@@ -941,7 +926,7 @@ export const groupCorpus: TLBCorpus = {
             ],
         ],
         [
-            'unary_zero$0 = Unary ~0; unary_succ$1 {n:#} x:(Unary ~n) = Unary ~(n + 1); hm_edge#_ {l:#} {m:#} label:(Unary ~l) {7 = (~m) + l} = UnaryUserCheckOrder;',
+            `${TLBStd.Unary} hm_edge#_ {l:#} {m:#} label:(Unary ~l) {7 = (~m) + l} = UnaryUserCheckOrder;`,
             [
                 [
                     {
