@@ -660,11 +660,26 @@ export const groupCorpus: TLBCorpus = {
     ],
     'Naming tag': [
         [
-            '_ a:# = MultipleEmptyConstructor 0; _ b:(## 5) = MultipleEmptyConstructor 1; a$_ x:(## 6) = MultipleEmptyConstructor 2;',
+            '_ x:(## 3) = EmptyConstructor 0; _ x:(## 16) = EmptyConstructor 1; _ x:# = EmptyConstructor 2; _ a:(EmptyConstructor 0) b:(EmptyConstructor 1) c:(EmptyConstructor 2) = UseEmptyConstructor;',
             [
-                [{ kind: 'MultipleEmptyConstructor__', a: 5 }, 'te6cckEBAQEABgAACAAAAAX/FF46'],
-                [{ kind: 'MultipleEmptyConstructor__1', b: 6 }, 'te6cckEBAQEAAwAAATTkEUKC'],
-                [{ kind: 'MultipleEmptyConstructor_a', x: 5 }, 'te6cckEBAQEAAwAAARbN78RD'],
+                [
+                    {
+                        kind: 'UseEmptyConstructor',
+                        a: { kind: 'EmptyConstructor__', x: 7 },
+                        b: { kind: 'EmptyConstructor__1', x: 65535 },
+                        c: { kind: 'EmptyConstructor__2', x: 4294967295 },
+                    },
+                    'te6cckEBAQEACQAADf////////AU1SNw',
+                ],
+                [
+                    {
+                        kind: 'UseEmptyConstructor',
+                        a: { kind: 'EmptyConstructor__', x: 1 },
+                        b: { kind: 'EmptyConstructor__1', x: 1 },
+                        c: { kind: 'EmptyConstructor__2', x: 1 },
+                    },
+                    'te6cckEBAQEACQAADSAAIAAAADCDX3rj',
+                ],
             ],
         ],
     ],
